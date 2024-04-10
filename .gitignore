@@ -1,5 +1,6 @@
 frames/
 received_frames/
+__pycache__/
 baloncesto.jpg
 server_chsa.py
 datos_recibidos.txt
