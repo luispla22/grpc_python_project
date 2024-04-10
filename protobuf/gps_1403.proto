@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package gps_1403;
+
+import "google/protobuf/timestamp.proto"; 
+
+message DataGPS {
+  string payload = 1;
+  google.protobuf.Timestamp timestamp = 2;
+}
+
+
+
+message Empty{}
+
+service DataGPSService {
+  rpc SendGPSData(DataGPS) returns (DataGPS);
+}

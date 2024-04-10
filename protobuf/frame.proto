@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package gstreamer;
+
+import "google/protobuf/timestamp.proto";
+
+message Frame {
+  bytes data = 1;
+  google.protobuf.Timestamp timestamp = 2;
+}
+
+message Void{}
+
+
+service FrameSender {
+  rpc SendFrame(Frame) returns (Void);
+}

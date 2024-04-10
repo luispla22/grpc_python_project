@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package generic;
+
+import "google/protobuf/timestamp.proto"; 
+
+message Data {
+  string data_type = 1;
+  bytes payload = 2;
+  google.protobuf.Timestamp timestamp = 3;
+}
+
+
+
+message Empty{}
+
+service DataService {
+  rpc SendData(Data) returns (Data);
+}
