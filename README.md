@@ -1,7 +1,7 @@
 # GRPC Python Project
 Grpc project for transfering frames, from clients to server, from a video source, geojson data and some generic data.
 
-## Initial idea:´
+## Initial idea:
 
 ![Idea inicial](grpc_mciroservices.excalidraw.svg)
 
