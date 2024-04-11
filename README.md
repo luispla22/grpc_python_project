@@ -30,6 +30,5 @@ Depending on what you want to transmit, start the corresponding client (or multi
 - You need to install the following libraries:
   - `pip install grpcio`
   - `pip install grpcio-tools`
-- You need to create the folders //frames// and //received_frames// in the same directory as the server_grpc7.py file in order to use correctly the cam service and the file //datos_recibidos.txt// to save the received data.
-
+- You need to create the folders *frames/* and *received_frames/* in the same directory as the server_grpc7.py file in order to use correctly the cam service and the file *datos_recibidos.txt/* to save the received data.
 - The GPS Model is BU-353-S4 (but the code works with many models).
