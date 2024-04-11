@@ -8,6 +8,13 @@ import frame_pb2
 import frame_pb2_grpc
 from google.protobuf.timestamp_pb2 import Timestamp
 
+'''
+This script captures frames from a webcam, processes them, and sends them to a gRPC server. 
+It provides options to save images, draw circles on frames, and set the capture interval. 
+The captured frames are encoded as JPEG images and sent to the server along with a timestamp using Google Protocol Buffers (protobuf). 
+Additionally, it allows customization of camera index, saving images, drawing circles on frames, and setting the capture interval through command-line arguments.
+'''
+
 path = './frames/'
 
 #A function to make any process to frames (this draw a circle on it)
